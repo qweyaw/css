@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  width: 300%;
+  height: 300px;
+  animation: move 13s linear infinite;
+}
+.left-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.right-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #657ad1;
+
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.67%);
+
+  }
+}
